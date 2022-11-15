@@ -36,7 +36,7 @@ public class Part1RecordReader extends RecordReader<Text, LongWritable> {
             // 获取文件路径
             String path = split.getPath().toString();
             // 获取文件类型
-            String fileclass = path.split("/")[-2];
+            String fileclass = path.split("\\\\")[-2];
             // 设置输输出的key
             k.set(fileclass);
         }
