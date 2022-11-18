@@ -22,16 +22,16 @@ public class Part1Driver {
         job.setReducerClass(Part1Reducer.class);
         //4 设置自定义inputFormat
         job.setInputFormatClass(Part1InputFormat.class);
-        //4 设置map输出的kv类型
+        //5 设置map输出的kv类型
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(LongWritable.class);
-        //5 设置最终输出的kv类型
+        //6 设置最终输出的kv类型
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(LongWritable.class);
-        //6 设置输入路径和输出路径
-        FileInputFormat.setInputPaths(job, new Path("input\\part1input"));
-        FileOutputFormat.setOutputPath(job, new Path("output\\part1output"));
-        //7 提交job
+        //7 设置输入路径和输出路径
+        FileInputFormat.setInputPaths(job, new Path("E:\\Code\\hadoop_homework\\data\\part1in\\SPAIN"));
+        FileOutputFormat.setOutputPath(job, new Path("E:\\Code\\hadoop_homework\\data\\part1out"));
+        //8 提交job
         boolean b = job.waitForCompletion(true);
         System.exit(b ? 0 : 1);
     }
