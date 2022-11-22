@@ -1,4 +1,4 @@
-package part1;
+package sym.part1;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
