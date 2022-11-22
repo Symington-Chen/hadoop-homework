@@ -1,4 +1,4 @@
-package part1;
+package sym.part1;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
